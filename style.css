@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    cursor:url(img/flyswatter.png) 30 30, auto;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./img/wall.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.moving-div {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    transition: transform 0.8s;
+}
+
+.moving-div .fly-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.killed-fly {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    overflow: hidden;
+}
