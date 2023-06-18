@@ -26,10 +26,7 @@ function moveDivRandomly() {
   const randomY = Math.floor(Math.random() * maxY);
   movingDiv.style.transform = `translate(${randomX}px, ${randomY}px)`
 }
-
 moveDivRandomly();
-
-// intervalId = setInterval(moveDivRandomly, 500);
 
 
 function hitFly () {
@@ -79,7 +76,7 @@ movingDiv.addEventListener("click", function(event) {
     movingDiv.style.display = "block";
     moveDivRandomly();
     if (flyImg) {
-      flyImg.src = "./img/a-fly.png";
+      flyImg.src = "./img/fly3-img.gif";
     }
     intervalId = setInterval(moveDivRandomly, 500);
   }, 2000)
